@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="Images/favicon2.png">
+        <title>ATAVIO | Inicio</title>
+    </head>
+    <body>
+        <section class="showcase">
+            <header>
+                <h2 class="logo">ATAVÍO</h2>
+                <div class="toggle"></div>
+            </header>
+            <video src="Images/food.mp4" muted loop autoplay></video>
+            <div class="overlay"></div>
+            <div class="text">
+                <h2>Conoce Atavío</h2>
+                <br>
+                <h3>Una nueva experiencia con calidad y pasión en cada platillo.</h3>
+                <br>
+                <p>Platillos de gran calidad y sin perder la esencia de su origen.</p>
+                <br>
+                <a href="#">Servicios</a>
+            </div>
+            <ul class="social">
+                <li><a href="https://www.facebook.com/"><img src="Images/facebook.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/"><img src="Images/instagram.png" alt=""></a></li>
+            </ul>
+        </section>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Concepto</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click', function() {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+            menuToggle.addEventListener('mouseover', function() {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+    </body>
+</html>
